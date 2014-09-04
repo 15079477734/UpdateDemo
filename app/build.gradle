@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "DD.updatedemo"
+        minSdkVersion 14
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/android-support-v4.jar')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/bmob_v3.1.8.jar')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/locSDK_4.2.jar')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/mta-sdk-1.0.0.jar')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/open_sdk.jar')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/photoview-library-1.2.2.jar')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/radial-menu-v4.jar')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/universal-image-loader-1.9.2_sources.jar')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/baidumapapi_v3_0_0.jar')
+    compile files('C:/Users/Administrator/Desktop/diandi/3/UpdateDemo/libs/Bmob_IMSDK_v1.1.1beta.jar')
+
+}
